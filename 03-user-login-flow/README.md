@@ -23,6 +23,22 @@ graph TD
     F -->|Yes| H[User Logged In Successfully]
 ```
 
+**Code:**
+````markdown
+```mermaid
+graph TD
+    A[User Enters Credentials] --> B{Valid Credentials?}
+    B -->|No| C[Show Error Message]
+    C --> A
+    B -->|Yes| D[Send 2FA Code]
+    D --> E[User Enters 2FA Code]
+    E --> F{Valid 2FA Code?}
+    F -->|No| G[Show Error & Retry]
+    G --> E
+    F -->|Yes| H[User Logged In Successfully]
+```
+````
+
 ## Key Elements Explained
 
 - **Decision Points**: Where the flow branches based on conditions

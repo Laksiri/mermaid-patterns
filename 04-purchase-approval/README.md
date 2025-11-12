@@ -23,6 +23,22 @@ graph TD
     D --> H
 ```
 
+**Code:**
+````markdown
+```mermaid
+graph TD
+    A[Employee Submits Purchase Request] --> B[Manager Reviews Request]
+    B --> C{Amount Under $1000?}
+    C -->|Yes| D[Auto-Approve]
+    C -->|No| E[Send to Finance Team]
+    E --> F[Finance Reviews]
+    F --> G{Approve?}
+    G -->|Yes| H[Purchase Approved]
+    G -->|No| I[Purchase Rejected]
+    D --> H
+```
+````
+
 ## Key Elements Explained
 
 - **Submission**: Starting point initiated by employee

@@ -18,6 +18,17 @@ graph LR
     D --> E[Notify: Trigger Report Generation]
 ```
 
+**Code:**
+````markdown
+```mermaid
+graph LR
+    A[Extract: Pull from Sales DB] --> B[Transform: Clean & Aggregate]
+    B --> C[Transform: Calculate Metrics]
+    C --> D[Load: Insert into Data Warehouse]
+    D --> E[Notify: Trigger Report Generation]
+```
+````
+
 ## Key Elements Explained
 
 - **Extract**: Source data retrieval from operational database

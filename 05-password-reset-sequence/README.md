@@ -26,6 +26,25 @@ sequenceDiagram
     Frontend-->>User: Check your email message
 ```
 
+**Code:**
+````markdown
+```mermaid
+sequenceDiagram
+    participant User
+    participant Frontend
+    participant API
+    participant EmailService
+
+    User->>Frontend: Request password reset
+    Frontend->>API: POST /reset-password
+    API->>API: Generate reset token
+    API->>EmailService: Send reset email
+    EmailService-->>API: Email sent confirmation
+    API-->>Frontend: Success response
+    Frontend-->>User: Check your email message
+```
+````
+
 ## Key Elements Explained
 
 - **Participants**: The actors/systems involved in the interaction

@@ -19,6 +19,18 @@ graph TD
     E --> A
 ```
 
+**Code:**
+````markdown
+```mermaid
+graph TD
+    A[User Submits Form] --> B[API Receives Request]
+    B --> C[Validate Data]
+    C --> D[Store in Database]
+    D --> E[Return Confirmation]
+    E --> A
+```
+````
+
 ## Key Elements Explained
 
 - **User Input**: Starting point of the data flow

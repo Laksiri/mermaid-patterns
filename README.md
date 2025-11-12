@@ -29,6 +29,13 @@ This diagram shows the complete journey: request comes in, gets routed through a
 
 ## Examples
 
+Each example folder contains a complete README with:
+- **Real-world scenario** explaining when to use the pattern
+- **Live diagram** that renders on GitHub
+- **Copy-paste code** showing the exact Mermaid syntax
+- **Customization examples** for different use cases
+- **Tips and best practices** for creating effective diagrams
+
 | Diagram Type | Use Case | Best For |
 |--------------|----------|----------|
 | [Data Flow](./01-data-flow/) | System data movement | Software/Data Engineers |
